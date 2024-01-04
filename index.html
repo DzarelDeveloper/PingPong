@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Ping Ping Games</title> 
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Sarabun" rel="stylesheet"> 
+ </head> 
+ <body onload="document.getElementById('container').style.visibility='hidden',document.getElementsByClassName('tab')[0].style.animation='pop .27s ease'"> 
+  <canvas id="canvas"></canvas> 
+  <div class="tab"> 
+   <div id="logo"> 
+    <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/ping_pong_logo.png" alt="Logo"> 
+    <h3>Ping Pong</h3> 
+   </div> 
+   <div id="info">
+    <b>ⓘ</b> Score 10 Points To Win.
+   </div> 
+   <div class="level"> 
+    <div id="easy" onclick="eas()">
+     Beginner
+    </div> 
+    <div id="hard" onclick="har()">
+     Medium
+    </div> 
+    <div id="impossible" onclick="imp()">
+     <i class="fas fa-skull"></i> Impossible <i class="fas fa-skull"></i>
+    </div> 
+   </div> 
+  </div> 
+  <div id="status"> 
+   <center> 
+    <div id="result">
+     You Win
+    </div> 
+   </center> 
+   <center> <button onclick="again()">Play Again</button> 
+   </center> 
+  </div>
+  <audio id="music" autoplay loop> 
+   <source src="https://github.com/DzarelDeveloper/Img/raw/main/PingPong.mp3" type="audio/mp3"> 
+  </audio> 
+  <audio id="win" autoplay> 
+   <source src="https://github.com/DzarelDeveloper/Img/raw/main/win.mp3" type="audio/mp3"> 
+  </audio> 
+  <audio id="lose" autoplay> 
+   <source src="https://github.com/DzarelDeveloper/Img/raw/main/Lose.mp3" type="audio/mp3"> 
+  </audio>
+ </body>
+</html>
