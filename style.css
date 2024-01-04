@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 5px;
+    background-color: #262626;
+    user-select: none;
+    font-family: 'Sarabun', sans-serif;
+}
+
+i {
+    color: red;
+    margin: 0px 2px 0px 2px;
+}
+
+.tab,
+#status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1;
+    width: 330px;
+    height: 370px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: 150ms;
+}
+
+img {
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    top: 20px;
+}
+
+h3 {
+    display: inline-block;
+    color: dimgray;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    margin: 2px;
+}
+
+#info {
+    display: block;
+    position: relative;
+    font-family: 'Sarabun', sans-serif;
+    margin: 15px;
+    margin-top: 25px;
+}
+
+#easy,
+#hard,
+#impossible {
+    display: block;
+    position: relative;
+    padding: 12px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #efefef;
+    border: 3px dashed #262626;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+#status {
+    font-family: 'Press Start 2P', cursive;
+    height: 200px;
+    visibility: hidden;
+    transition-duration: 100ms;
+}
+
+#result {
+    font-size: 30px;
+    margin: 20px 10px 10px 10px;
+}
+
+button {
+    padding: 20px;
+    position: relative;
+    outline: none;
+    border: 3px dashed #262626;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    margin: 8px;
+    margin-top: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.85);
+    box-shadow: 0px 0px 0px gray;
+}
+
+#canvas {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: dimgray;
+    border: 4px solid white;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+    34% {
+        transform: scale(1);
+    }
+    66% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
